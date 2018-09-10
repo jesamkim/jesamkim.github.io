@@ -4,7 +4,7 @@ title: "OCI Object Storage - Large file Upload"
 date: 2018-09-10 00:00:00 +0300
 description: "Object Storage 버킷에 5GB 이상 크기 파일을 CLI로 업로드 해봅니다." # Add post description (optional)
 img: oci_cli.png # Add image post (optional)
-tags: [racle, oci, iaas, cloud, objectstorage, cli] # add tag
+tags: [oracle, oci, iaas, cloud, objectstorage, cli] # add tag
 ---
 
 OCI Object Storage는 web이나 cloudberry 등에서 upload 시 single file size가 5GB가 넘으면 업로드 되지 않습니다.
