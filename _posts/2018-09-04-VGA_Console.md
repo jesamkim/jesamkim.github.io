@@ -3,7 +3,7 @@ layout: post
 title: "VGA Console을 통한 OCI Compute 인스턴스 연결"
 date: 2018-09-04 00:00:00 +0300
 description: "OCI Compute 인스턴스를 Public IP를 통하지 않고 접속하는 방법 입니다." # Add post description (optional)
-img: oracle-cloud.png # Add image post (optional)
+img: vga_console.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, vgaconsole, vnc] # add tag
 ---
 
