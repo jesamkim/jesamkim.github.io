@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "[번역] OCI AD 내 가용성을 위한 Fault Domain 소개"
-description: "OCI의 단일 AD(=데이터센터) 내에서 가용성을 높일 수 있는 Fault Domain을 소개합니다."
-date: 2018-09-04
-tags: [oracle, oci, iaas, cloud, ad, faultdomain]
-comments: true
-share: true
+date: 2018-09-04 00:00:00 +0300
+description: "OCI의 단일 AD(=데이터센터) 내에서 가용성을 높일 수 있는 Fault Domain을 소개합니다." # Add post description (optional)
+img: oracle-cloud.png # Add image post (optional)
+tags: [oracle, oci, iaas, cloud, ad, faultdomain] # add tag
 ---
 
 AD(Availability Domain) 내에서 OCI(Oracle Cloud Infrastructure) VM(Virtual Machine) 및 BM(Bare Metal) 컴퓨트 인스턴스의 가용성을 관리하고 향상시키는 새로운 방법인 Fault Domain을 소개합니다.
@@ -16,14 +15,14 @@ AD(Availability Domain) 내에서 OCI(Oracle Cloud Infrastructure) VM(Virtual Ma
 
 OCI는 일반적으로 Region 마다 3개의 AD로 설계되며 각 AD에는 3개의 Fault Domain이 있습니다. Compute 하드웨어에서 유지관리를 수행할 떄, OCI는 단 하나의 Fault Domain에 대해 영향을 주며 나머지 Fault Domain의 인스턴스에 대해 가용성을 보장합니다.
 
-![]({{site.baseurl}}/images/fault_domain01.png)
+![]({{site.baseurl}}/assets/img/fault_domain01.png)
 
 Fault Domain 설정은 매우 간단합니다. API, CLI 또는 웹 콘솔을 사용하여 새로운 Compute Instance를 만들 때 Fault Domain을 지정할 수 있습니다. Fault Domain을 지정하지 않으면 인스턴스는 해당 AD내의 3개의 Fault Domain 중 하나에 자동으로 분류됩니다. 인스턴스가 생성 된 이후 Fault Domain을 수정하려면 인스턴스를 Terminate 한 후 재생성 해야 합니다. 기존에 이미 사용중인 VM 및 BM의 인스턴스들은 AD내 3개의 Fault Domain에 자동으로 배포됩니다.
 
-![]({{site.baseurl}}/images/fault_domain02.png)
+![]({{site.baseurl}}/assets/img/fault_domain02.png)
 
 인스턴스 세부사항 페이지는 인스턴스에 대한 다른 메타데이터와 함께 Fault Domain 정보를 표시합니다.
 
-![]({{site.baseurl}}/images/fault_domain03.png)
+![]({{site.baseurl}}/assets/img/fault_domain03.png)
 
 Fault Domain은 무과금 서비스이며, 자세한 내용은 [OCI Public Document](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm#fault), [Compute FAQ](https://cloud.oracle.com/compute/faq)에서 확인하실 수 있습니다.
