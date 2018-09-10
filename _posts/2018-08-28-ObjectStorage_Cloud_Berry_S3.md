@@ -3,7 +3,7 @@ layout: post
 title: "OCI Object Storage를 CloudBerry Explorer for Amazon S3로 접속하기"
 date: 2018-08-28 00:00:00 +0300
 description: "Cloudberry Explorer에 OCI의 Object Storage를 연동시키는 방법 입니다." # Add post description (optional)
-img: oraclelogo1.png # Add image post (optional)
+img: oracle-cloud.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, objectstorage, s3] # add tag
 ---
 
