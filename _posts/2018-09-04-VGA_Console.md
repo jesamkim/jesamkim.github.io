@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "VGA Console을 통한 OCI Compute 인스턴스 연결"
-description: "OCI Compute 인스턴스를 Public IP를 통하지 않고 접속하는 방법 입니다."
-date: 2018-09-04
-tags: [oracle, oci, iaas, cloud, vgaconsole, vnc]
-comments: true
-share: true
+date: 2018-09-04 00:00:00 +0300
+description: "OCI Compute 인스턴스를 Public IP를 통하지 않고 접속하는 방법 입니다." # Add post description (optional)
+img: oracle-cloud.png # Add image post (optional)
+tags: [oracle, oci, iaas, cloud, vgaconsole, vnc] # add tag
 ---
 
 OCI Compute 에서는 인스턴스에 대한 VGA Console 접속을 지원 합니다. VGA Console 을 통해 인스턴스의 Public IP 로 접속 없이 인스턴스에 접속할 수 있습니다. 
@@ -34,7 +33,7 @@ Compute >> Instances >> Instance Details >> Resources의 Console Connections 클
 Create Console Connection 선택 -> Public Key 파일을 등록 합니다.
 
 - 그림1: VGA Console 생성 창
-![]({{site.baseurl}}/images/vga_console01.png) 
+![]({{site.baseurl}}/assets/img/vga_console01.png) 
 
 
 ## Console Connections 접속
@@ -43,14 +42,14 @@ Compute >> Instances >> Instance Details >> Resources의 Console Connections 클
 Connect with VNC를 선택합니다.
 
 - 그림2: VNC를 통한 Console 접속 선택
-![]({{site.baseurl}}/images/vga_console02.png)
+![]({{site.baseurl}}/assets/img/vga_console02.png)
 
 Platform을 WINDOWS로 선택합니다.  
 (만약 Linux 혹은 Mac 을 사용하시는 환경에서는 Platform을 Linux/MAC OS를 선택하시면 됩니다)
 그리고 CONNECTION STRING 부분을 복사하여 메모장에 붙여넣습니다. 
 
 - 그림3: Windows 플랫폼에서의 VNC Connection String 창
-![]({{site.baseurl}}/images/vga_console03.png)
+![]({{site.baseurl}}/assets/img/vga_console03.png)
 
 메모장에 붙여넣은 CONNECTION STRING에서 Private Key 부분을 본인의 환경에 맞게 수정해야 합니다.
 이탤릭체의 부분(Private Key)을 Private Key가 있는 절대경로로 수정합니다. 
@@ -66,12 +65,12 @@ Power Shell을 열고 위의 String 붙여넣기 하면, OCI Instance 와 SSH �
 만약 Power Shell 창을 닫게 되면 터널링이 끊어집니다. 따라서 Power Shell 창은 닫지 마시기 바랍니다.
 
 - 그림4: Power Shell에서 Connection String 실행
-![]({{site.baseurl}}/images/vga_console04.png)
+![]({{site.baseurl}}/assets/img/vga_console04.png)
 
 VNC Viewer를 열고, localhost:5900 으로 접속하면 터널링된 Instance로 VGA Connection이 완료됩니다.
 
 - 그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속
-![]({{site.baseurl}}/images/vga_console05.png)
+![]({{site.baseurl}}/assets/img/vga_console05.png)
 
 
 ### 참조자료
