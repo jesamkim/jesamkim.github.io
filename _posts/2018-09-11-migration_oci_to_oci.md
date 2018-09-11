@@ -32,7 +32,7 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 * 생성된 Custom Image에서 **Export Custom Image** 클릭
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci03.png)
-<br>
+<br><br>
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci04.png)
 <br><br>
 
