@@ -69,7 +69,7 @@ Import가 완료된 Custom Image에서 **Create Instance** 클릭
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci08.png)
 <br><br>
 
-정상적으로 Region B에 새로운 인턴스를 생성하였습니다.
+정상적으로 Region B에 새로운 인스턴스를 생성하였습니다.
 <br><br>
 만약 추가의 Block Volume 이 있다면, 먼저 동일 사이즈의 Block Volume을 생성 후 Attach 합니다.<br>
 그리고 sftp 등의 방법을 통해 file system을 복사할 수 있습니다.
