@@ -8,8 +8,8 @@ tags: [oracle, oci, iaas, cloud, customimage, objectstorage, migration] # add ta
 ---
 
 OCI에서 Compute Instance의 Migration 상황을 다음의 2가지 경우라고 가정해 봅시다.
-	1. 다른 OCI Tenancy로 이전할 경우
-	2. 다른 OCI Region으로 이전할 경우 
+   1. 다른 OCI Tenancy로 이전할 경우
+   2. 다른 OCI Region으로 이전할 경우 
 
 위와 같은 상황에서는 다음과 같이 Migration 할 수 있습니다.
 (Step1인 Instance의 Boot Volume에 대해서만 Migration 해봅니다)
@@ -24,7 +24,7 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 * 이전하려는 Compute Instance에서 **Create Custom Image** 클릭
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci01.png)
-<br>
+<br><br>
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci02.png)
 <br><br>
 
