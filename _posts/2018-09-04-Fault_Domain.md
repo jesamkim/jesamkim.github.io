@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[번역] OCI AD 내 가용성을 위한 Fault Domain 소개"
-date: 2018-09-04 00:00:00 +0300
+date: 2018-09-04 00:00:00 +0800
 description: "OCI의 단일 AD(=데이터센터) 내에서 가용성을 높일 수 있는 Fault Domain을 소개합니다." # Add post description (optional)
 img: fault_domain01.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, ad, faultdomain] # add tag
