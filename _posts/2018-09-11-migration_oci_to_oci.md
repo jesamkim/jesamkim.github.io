@@ -20,14 +20,14 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 
 ## Region A
 
-1. **MENU > Compute > Instances**
+**MENU > Compute > Instances**
 * 이전하려는 Compute Instance에서 **Create Custom Image** 클릭
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci01.png)
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci02.png)
 
 
-2. **MENU > Compute > Custom Images**
+**MENU > Compute > Custom Images**
 * 생성된 Custom Image에서 **Export Custom Image** 클릭
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci03.png)
@@ -37,7 +37,7 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 
 
 
-3. **MENU > Object Storage > Object Storage**
+**MENU > Object Storage > Object Storage**
 * 위에서 Custom Image는 Object Storage의 Bucket에서 확인됩니다.
 * 여기서 이미지 파일의 URL Path를 복사해 둡니다.
 	   
@@ -47,21 +47,26 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 
 ## Region B
 
-1. **MENU > Compute > Custom Images**
+**MENU > Compute > Custom Images**
 * Custom Images에서 **Import Image** 클릭
-		- Region A의 Object Storage URL 사용
-		- IMAGE TYPE : **QCOW2**
-		- LAUNCH MODE : **NATIVE MODE**
-		
+~~~
+	- Region A의 Object Storage URL 사용
+	- IMAGE TYPE : **QCOW2**
+	- LAUNCH MODE : **NATIVE MODE**
+~~~		
+
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci06.png)
 
 
-2. Import가 완료된 Custom Image에서 **Create Instance** 클릭
+
+Import가 완료된 Custom Image에서 **Create Instance** 클릭
 	
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci07.png)
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci08.png)
 
+
 정상적으로 Region B에 새로운 인턴스를 생성하였습니다.
+
 
 만약 추가의 Block Volume 이 있다면, 먼저 동일 사이즈의 Block Volume을 생성 후 Attach 합니다. 
 그리고 sftp 등의 방법을 통해 file system을 복사할 수 있습니다.
