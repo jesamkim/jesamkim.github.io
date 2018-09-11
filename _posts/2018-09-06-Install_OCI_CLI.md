@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OCI-CLI 설치 (Oracle Linux 7)"
-date: 2018-09-06 00:00:00 +0300
+date: 2018-09-06 00:00:00 +0800
 description: "OCI CLI를 Oracle Linux 7에 설치해 봅니다." # Add post description (optional)
 img: oci_cli.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, cli] # add tag
