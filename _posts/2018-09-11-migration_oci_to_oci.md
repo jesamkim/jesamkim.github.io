@@ -31,6 +31,7 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 * 생성된 Custom Image에서 **Export Custom Image** 클릭
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci03.png)
+
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci04.png)
 
 이미지는 QCOW2 format으로 export 됩니다. (exporting 에서 시간이 조금 걸립니다)
@@ -49,11 +50,11 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 
 **MENU > Compute > Custom Images**
 * Custom Images에서 **Import Image** 클릭
-~~~
+
 	- Region A의 Object Storage URL 사용
 	- IMAGE TYPE : **QCOW2**
 	- LAUNCH MODE : **NATIVE MODE**
-~~~		
+
 
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci06.png)
 
@@ -62,6 +63,7 @@ Region A에서는 진행하기 전 Object Storage에 **Public Bucket**을 생성
 Import가 완료된 Custom Image에서 **Create Instance** 클릭
 	
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci07.png)
+
 ![]({{site.baseurl}}/assets/img/migration_from_oci_to_oci08.png)
 
 
