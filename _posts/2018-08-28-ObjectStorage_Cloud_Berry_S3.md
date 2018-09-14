@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "OCI Object Storage를 CloudBerry Explorer for Amazon S3로 접속하기"
-date: 2018-08-28 00:00:00 +0800
+date: 2018-08-28 12:00:00 +0900
 description: "Cloudberry Explorer에 OCI의 Object Storage를 연동시키는 방법 입니다." # Add post description (optional)
-img: cloudberry.png # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, objectstorage, s3] # add tag
+img: "cloudberry.png"
+tags: [oracle, oci, iaas, cloud, objectstorage, s3]
 ---
 
 > OCI (Oracle Cloud Infrastructure)의 IaaS 서비스 중 Object Storage는 S3 호환 API가 제공되므로, CloudBerry Explorer for Amazon S3 사용자는 손쉽게 OCI Object Storage를 연결하실 수 있습니다.
