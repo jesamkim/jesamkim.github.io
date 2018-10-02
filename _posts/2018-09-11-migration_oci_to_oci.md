@@ -3,7 +3,7 @@ layout: post
 title: "Migration from OCI to OCI"
 date: 2018-09-11 00:00:00 +0800
 description: "다른 Region으로 OCI Compute Instance를 Migration" # Add post description (optional)
-img: migration_from_oci_to_oci00.png # Add image post (optional)
+img: migration_from_oci_to_oci.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, customimage, objectstorage, migration] # add tag
 ---
 
