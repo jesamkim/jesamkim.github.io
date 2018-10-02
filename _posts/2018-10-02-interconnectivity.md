@@ -76,7 +76,7 @@ Exchange 프로바이더는 온프레미스와 Exchange 프로바이더 간의 �
 1. Oracle Cloud Infrastructure 콘솔을 통해 FastConnect를 Megaport에 연결합니다.  
 2. AWS 콘솔을 통해 AWS Direct Connect를 Megaport와 연결합니다.  
 3. MCR을 생성합니다:  
-   a. MCR에서 FastConnect에 대한 VXC (Virtual Cross Connect) 연결을 생성합니다.
+   a. MCR에서 FastConnect에 대한 VXC (Virtual Cross Connect) 연결을 생성합니다.  
    b. MCR에서 연결 클라우드 프로바이더 (예: AWS Direct Connect)에 대한 VXC 연결을 생성합니다.
 
 ![]({{site.baseurl}}/assets/img/blog_interconnectivity2.png)
