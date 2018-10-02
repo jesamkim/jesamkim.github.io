@@ -7,15 +7,15 @@ img: blog_interconnectivity_1.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, interconnect, fastconnect, dedicated, megaport, network] # add tag
 ---
 
- 멀티 클라우드 아키텍처는 둘 이상의 클라우드 서비스 프로바이더를 이용 합니다. 기업은 복원력 제공, 재해 복구 계획 수립, 성능 향상, 비용 절감 등 여러 가지 이유로 클라우드 프로바이더가 두 개 이상 있습니다. 클라우드 리소스를 한 클라우드 프로바이더에서 다른 클라우드 프로바이더로 마이그레이션하려는 경우 클라우드 간 액세스 및 네트워킹이 필요합니다.
+멀티 클라우드 아키텍처는 둘 이상의 클라우드 서비스 프로바이더를 이용 합니다. 기업은 복원력 제공, 재해 복구 계획 수립, 성능 향상, 비용 절감 등 여러 가지 이유로 클라우드 프로바이더가 두 개 이상 있습니다. 클라우드 리소스를 한 클라우드 프로바이더에서 다른 클라우드 프로바이더로 마이그레이션하려는 경우 클라우드 간 액세스 및 네트워킹이 필요합니다.
  Oracle Cloud Infrastructure는 Oracle VCN(Virtual Cloud Network)을 인터넷, 온프레미스 데이터센터 또는 기타 클라우드 프로바이더와 연결하기 위한 IGW(Internet Gateway) 및 DRG(Dynamic Routing Gateway) 서비스 게이트웨이 옵션을 제공합니다.  
 
- 이 포스트에서는 Oracle Cloud에 대한 네트워크 연결을 일반적으로 계획하는데 도움이 되는 연결 서비스 옵션에 대해 설명하고 클라우드 프로바이더 간의 연결 옵션에 대해 설명합니다.  
+이 포스트에서는 Oracle Cloud에 대한 네트워크 연결을 일반적으로 계획하는데 도움이 되는 연결 서비스 옵션에 대해 설명하고 클라우드 프로바이더 간의 연결 옵션에 대해 설명합니다.  
 
 
- # Connectivity Option Overview
+# Connectivity Option Overview
 
- 모든 주요 클라우드 서비스 프로바이더(CSP)는 세 가지 고유한 네트워크 연결 서비스 옵션을 제공합니다: 
+모든 주요 클라우드 서비스 프로바이더(CSP)는 세 가지 고유한 네트워크 연결 서비스 옵션을 제공합니다: 
  
  * Public internet  
  * IPSec VPN  
@@ -62,10 +62,7 @@ Exchange 프로바이더는 온프레미스와 Exchange 프로바이더 간의 �
 * Physical customer edge (CE) 장치를 Exchange 프로바이더와 연결
 
 다음 테이블은 위 2가지 경우에 대한 장단점 입니다.
-||Pros|Cons|
-|---|---|---|
-|Virtual router service 사용|* 간편한 구축<br>* 온디맨드 대역폭 제공<br>*구축 및 유지보수 비용 효율|* Cloud Exchange 지원 범위에 포함되는 라우팅 경로의 유연성<br>* Public IP Communication 불가|
-|Dedicated physical router 사용|*라우팅 기능의 유연한 관리<br>*원하는 하드웨어를 구현할 수 있는 기능 제공|*비교적 긴 배치 시간<br>* 확장 제한<br>*하드웨어 유지보수 비용|
+![]({{site.baseurl}}/assets/img/blog_interconnectivity4.png)|
 
 이 포스트의 범위는 파트너에 관계 없이 최적의 연결 옵션을 제공하는 것이지만 가상 라우터 서비스를 쉽게 구축하고 제공할 수 있기 때문에 예로서 MCR(Megaport Cloud Router) 옵션을 사용합니다. Oracle은 또한 AWS(Amazon Web Services)를 예시로 사용하고 있지만, Megaport는 Azure 및 Google Cloud Platform을 비롯한 여러 클라우드 프로바이터에 대한 연결을 지원합니다.
 
