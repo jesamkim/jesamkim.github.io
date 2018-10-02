@@ -62,7 +62,7 @@ Exchange 프로바이더는 온프레미스와 Exchange 프로바이더 간의 �
 * Physical customer edge (CE) 장치를 Exchange 프로바이더와 연결
 
 다음 테이블은 위 2가지 경우에 대한 장단점 입니다.
-![]({{site.baseurl}}/assets/img/blog_interconnectivity4.png)|
+![]({{site.baseurl}}/assets/img/blog_interconnectivity4.png)
 
 이 포스트의 범위는 파트너에 관계 없이 최적의 연결 옵션을 제공하는 것이지만 가상 라우터 서비스를 쉽게 구축하고 제공할 수 있기 때문에 예로서 MCR(Megaport Cloud Router) 옵션을 사용합니다. Oracle은 또한 AWS(Amazon Web Services)를 예시로 사용하고 있지만, Megaport는 Azure 및 Google Cloud Platform을 비롯한 여러 클라우드 프로바이터에 대한 연결을 지원합니다.
 
