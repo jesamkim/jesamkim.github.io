@@ -7,7 +7,7 @@ img: blog_interconnectivity.png # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, interconnect, fastconnect, dedicated, megaport, network] # add tag
 ---
 
-멀티 클라우드 아키텍처는 둘 이상의 클라우드 서비스 프로바이더를 이용 합니다. 기업은 복원력 제공, 재해 복구 계획 수립, 성능 향상, 비용 절감 등 여러 가지 이유로 클라우드 프로바이더가 두 개 이상 있습니다. 클라우드 리소스를 한 클라우드 프로바이더에서 다른 클라우드 프로바이더로 마이그레이션하려는 경우 클라우드 간 액세스 및 네트워킹이 필요합니다.
+멀티 클라우드 아키텍처는 둘 이상의 클라우드 서비스 프로바이더를 이용 합니다. 기업은 복원력 제공, 재해 복구 계획 수립, 성능 향상, 비용 절감 등 여러 가지 이유로 클라우드 프로바이더를 둘 이상 이용 합니다. 클라우드 리소스를 한 클라우드 프로바이더에서 다른 클라우드 프로바이더로 마이그레이션하려는 경우 클라우드 간 액세스 및 네트워킹이 필요합니다.
  Oracle Cloud Infrastructure는 Oracle VCN(Virtual Cloud Network)을 인터넷, 온프레미스 데이터센터 또는 기타 클라우드 프로바이더와 연결하기 위한 IGW(Internet Gateway) 및 DRG(Dynamic Routing Gateway) 서비스 게이트웨이 옵션을 제공합니다.  
 
 이 포스트에서는 Oracle Cloud에 대한 네트워크 연결을 일반적으로 계획하는데 도움이 되는 연결 서비스 옵션에 대해 설명하고 클라우드 프로바이더 간의 연결 옵션에 대해 설명합니다.  
