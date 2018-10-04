@@ -69,7 +69,7 @@ Power Shell을 열고 위의 String 붙여넣기 하면, OCI Instance 와 SSH �
 
 VNC Viewer를 열고, localhost:5900 으로 접속하면 터널링된 Instance로 VGA Connection이 완료됩니다.
 
-- 그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속
+- 그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속<br>
 ![]({{site.baseurl}}/assets/img/vga_console05.png)
 
 
