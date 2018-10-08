@@ -92,7 +92,7 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
 9. VCN-1을 열고, PrivateRouteTable-1을 연 다음, BridgeInstance의 기본 VNIC IP 주소에 route rule을 추가하세요.
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_7.png)
 
-10. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP ㅜ소에 route rule을 추가하세요.
+10. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP 주소에 route rule을 추가하세요.
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_8.png)
 
 11. 다음 예제와 같이 VCN-1을 열고 MgmtSecurityList를 열고 ingress rule을 지정하세요. VCN-2 (10.1.0.0/16)와의 상호 통신에 필요한 additional rule이 강조 표시됩니다. VCN-2에 유사한 rule을 복제하세요.
