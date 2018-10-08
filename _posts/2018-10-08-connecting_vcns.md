@@ -68,38 +68,58 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
 ### Console Steps
 
 1. **Create Virtual Cloud Network Only** 옵션과 중복되지 않는 CIDR 블록 (서브넷 용)을 사용하여 두 개의 VCN을 만듭니다. 자세한 내용은 [To create a cloud network in the Networking documentation](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVCNs.htm#console)을 참조하세요.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_2.png)
+
 
 2. 각 VCN의 각 서브넷에는 연결된 route table과 security list가 필요합니다. 이를 위해 4 개의 route table과 4 개의 security list를 작성하세요. 자세한 내용은 [To create a route table](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm#console) 및 [To create a new security list](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/securitylists.htm#console) 를 참조하세요.
 
 3. 각 VCN에 대해 하나의 public 서브넷과 private 서브넷을 만들어 각각에 대한 security list와 route table을 지정합니다. VCN 서브넷 페이지는 다음과 같습니다. 자세한 내용은 [To create a subnet](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVCNs.htm#console) 을 참조하세요.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_3.png)
 
+
 4. PrivateInstance1을 만들고 VCN-1의 Private 서브넷 (PrivateSubnet1)에 연결합니다. 마찬가지로 PrivateInstance2를 만들어 VCN-2의 Private 서브넷 (PrivateSubnet2)에 연결합니다.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_4.png)
 
+
 5. BridgeInstance라는 인스턴스를 하나 더 만들고 VCN-1 및 MgmtSubnet1에 연결합니다.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_5.png)
+
 
 6. BridgeInstance를 열고, **attached VNICs**를 클릭한 다음, **Create VNIC** 를 클릭합니다.
 
 7. 이 secondary VNIC를 VCN-2 및 MgmtSubnet2에 연결합니다.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_6.png)
 
+
 8. BridgeInstance의 기본 VNIC 및 보조 VNIC의 IP 주소를 기록합니다.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_7.png)
+
 
 9. VCN-1을 열고, PrivateRouteTable-1을 연 다음, BridgeInstance의 기본 VNIC IP 주소에 route rule을 추가하세요.
-![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_7.png)
 
-10. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP 주소에 route rule을 추가하세요.
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_8.png)
 
-11. 다음 예제와 같이 VCN-1을 열고 MgmtSecurityList를 열고 ingress rule을 지정하세요. VCN-2 (10.1.0.0/16)와의 상호 통신에 필요한 additional rule이 강조 표시됩니다. VCN-2에 유사한 rule을 복제하세요.
+
+10. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP 주소에 route rule을 추가하세요.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_9.png)
 
-12. VCN-1에서 다음 예제와 같이 PrivateSecurityList를 열고 ingress 및 egress rule을 지정하세요. VCN-2 에 유사한 rule을 복제하세요.
+
+11. 다음 예제와 같이 VCN-1을 열고 MgmtSecurityList를 열고 ingress rule을 지정하세요. VCN-2 (10.1.0.0/16)와의 상호 통신에 필요한 additional rule이 강조 표시됩니다. VCN-2에 유사한 rule을 복제하세요.
+
 ![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_10.png)
+
+
+12. VCN-1에서 다음 예제와 같이 PrivateSecurityList를 열고 ingress 및 egress rule을 지정하세요. VCN-2 에 유사한 rule을 복제하세요.
+
+![]({{site.baseurl}}/assets/img/connect_vcns_using_vnics_11.png)
+
 
 13. 콘솔 관련 구성을 모두 완료한 후 [Oracle Linux 인스턴스에 로그인](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/accessing-oracle-linux-instance-using-ssh.html#GUID-D947E2CC-0D4C-43F4-B2A9-A517037D6C11)하여 다음 단계를 수행하세요.
 
