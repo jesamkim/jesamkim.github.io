@@ -112,25 +112,20 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
 
 3. 브릿지 인스턴스에서 다음 명령을 실행하여 IP forwarding을 활성화 합니다.
 ~~~
-<div>
 	sysctl -w net.ipv4.ip_forward = 1
-</div>
 ~~~
 
 4. Port forwarding을 사용하려면 다음 방화벽 명령을 실행하세요.
 ~~~
-<div>
     firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i ens3 -j ACCEPT
     
     firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i ens4 -j ACCEPT
     
     /bin/systemctl restart firewalld
-</div>
 ~~~
 
 5. 다음 명령을 사용하여 [인스턴스 메타 데이터를 확인](https://docs.cloud.oracle.com/iaas/Content/Compute/Tasks/gettingmetadata.htm)하여 VCN-2의 MgmtSubnet2에 대한 virtualRouteIp에 유의하세요.
 ~~~
-<div>
     [opc@bridgeinstance ~]$ curl http://169.254.169.254/opc/v1/vnics/
     [ {
       "vnicId" : "ocid1.vnic.oc1.phx.abyhqljssar7g5nfkw5wfa52df6ysz5zh7qgjnz4u5mute7bsjagjixdngya",
@@ -147,16 +142,13 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
       "virtualRouterIp" : "10.1.0.1",    <<<<<<<<
       "subnetCidrBlock" : "10.1.0.0/24"
     } ][opc@bridgeinstance ~]$
-</div>
 ~~~
 
 6. VCN-2의 가상 라우터 IP로 라우팅되는 트래픽에 대한 VCN-2 MgmtSubnet2의 IP route rule을 추가합니다.
 ~~~
-<div>
     ip route add <VCN-2-Network> dev <secondary-vnic> via <MgmtSubnet2.Virtual_router_ip>
     
     Ex: ip route add 10.1.0.0/16 dev ens4 via 10.1.0.1
-</div>
 ~~~
 
 ### Verification
