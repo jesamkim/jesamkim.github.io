@@ -17,26 +17,26 @@ NAT Gateway는 다음과 같은 기능을 제공합니다:
 
 아래부터는 NAT Gateway를 통해 Private 인스턴스에서 Public Internet에 액세스하는 방법에 대해 설명합니다.
 
-![]({{site.baseurl}}/assets/img/nat_gateway_2.png)
+![]({{site.baseurl}}/assets/img/nat_gateway2.png)
 
 NAT Gateway 이전에는 Private 인스턴스는 (Public) NAT 인스턴스를 통해 Public Internet에 액세스 했습니다. VCN에는 associated route table, security list 및 DHCP 옵션이 있는 하나의 Public 서브넷과 하나의 Private 서브넷이 있습니다.
 
 Bastion 호스트(표시되지 않음)를 통해 SSH를 사용하여 Private 인스턴스에 연결하고 Public Internet의 리소스에 액세스 합니다.
 
-![]({{site.baseurl}}/assets/img/nat_gateway_3.png)
+![]({{site.baseurl}}/assets/img/nat_gateway3.png)
 
 
 하지만 이제는 VCN에 NAT Gateway를 간단하게 만들 수 있습니다!
 
-![]({{site.baseurl}}/assets/img/nat_gateway_4.png)
+![]({{site.baseurl}}/assets/img/nat_gateway4.png)
 
 VCN에 대한 NAT Gateway 목록에서 새로 생성된 게이트웨이를 볼 수 있습니다.
 
-![]({{site.baseurl}}/assets/img/nat_gateway_5.png)
+![]({{site.baseurl}}/assets/img/nat_gateway5.png)
 
 마지막으로 NAT 인스턴스를 가리키는 route rule을 NAT Gateway를 가리키도록 변경합니다.
 
-![]({{site.baseurl}}/assets/img/nat_gateway_6.png)
+![]({{site.baseurl}}/assets/img/nat_gateway6.png)
 
 몇 단계만 거치면, Private 서브넷의 모든 인스턴스에 인터넷 리소스에 대한 액세스 권한을 부여할 수 있습니다. 다른 OCI 게이트웨이(서비스, 인터넷 등)와 마찬가지로 NAT Gateway는 가용성이 높고 대역폭 요구사항을 충족하기 위해 탄력적으로 확장됩니다. 이제 더 이상 필요하지 않은 Public NAT 인스턴스를 삭제할 수 있습니다.
 
