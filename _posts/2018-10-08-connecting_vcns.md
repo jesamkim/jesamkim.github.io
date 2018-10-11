@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[번역] Multiple VNIC로 서로 다른 VCN 연결하기: Part 1"
+title: "Multiple VNIC로 서로 다른 VCN 연결하기: Part 1"
 date: 2018-10-08 10:00:00 +0900
 description: "여러 VNIC를 이용하여 서로 다른 VCN으로 통신하기" # Add post description (optional)
 img: connect_vcns_using_vnics.png   # Add image post (optional)
