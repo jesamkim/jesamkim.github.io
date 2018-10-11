@@ -7,9 +7,9 @@ img: connect_vcns_using_vnics.png   # Add image post (optional)
 tags: [oracle, oci, iaas, cloud, interconnect, vcn, vnic, terraform, network] # add tag
 ---
 
-Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 결하는 데 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. LPG를 사용하면 프로바이더 VCN이 고객 VCN과 연결되어 공유 리소스에 대한 Private Access를 허용할 수 있는 서비스 프로바이더 모델을 사용할 수 있습니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
+Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 연결하는데 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
 
-이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 여러 VCN을 연겨하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
+이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 여러 VCN을 연결하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
 
 
 # Use Case
