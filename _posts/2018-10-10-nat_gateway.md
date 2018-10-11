@@ -4,7 +4,7 @@ title: "[번역] OCI NAT Gateway 소개"
 date: 2018-10-10 10:00:00 +0900
 description: "Oracle Cloud Infrastructure NAT Gateway를 통해 Public Internet의 리소스에 접속할 수 있습니다." # Add post description (optional)
 img: nat_gateway.png   # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, nat, gateway, natgateway, private, network] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "nat", "gateway", "natgateway", "private", "network"] # add tag
 ---
 대부분의 Oracle Cloud Infrastructure 고객은 개인 정보, 보안 또는 운영 문제를 위해 Private Subnet에 연결되는 Compute Instance를 VCN (Virtual Cloud Network)에 보유하고 있습니다. 소프트웨어 업데이트, CRL 검사 등을 위해 이러한 리소스에 대한 Public Internet 액세스 권한을 부여하기 위해, 고객의 유일한 옵션은 Private IP 주소를 사용하여 Public Subnet에 NAT Instance를 생성하고 해당 인스턴스를 통해 트래픽을 라우팅 하는 것이었습니다. 많은 사람들이 이 방법을 성공적으로 사용했지만, 쉽게 확장되지 않고 수많은 관리 및 운영 과제가 생겼습니다.
 
