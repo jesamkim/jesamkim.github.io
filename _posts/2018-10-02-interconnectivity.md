@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[번역] Oracle Cloud와 타 클라우드의 연결"
+title: "Oracle Cloud와 타 클라우드의 연결"
 date: 2018-10-02 10:00:00 +0900
 description: "Oracle Cloud와 타 클라우드(AWS,Azure 등) 간 연결" # Add post description (optional)
 img: blog_interconnectivity.png # Add image post (optional)
