@@ -4,7 +4,7 @@ title: "VGA Console을 통한 OCI Compute 인스턴스 연결"
 date: 2018-09-04 00:00:00 +0800
 description: "OCI Compute 인스턴스를 Public IP를 통하지 않고 접속하는 방법 입니다." # Add post description (optional)
 img: vga_console.png # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, vgaconsole, vnc] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "vgaconsole", "vnc", "접속"] # add tag
 ---
 
 OCI Compute 에서는 인스턴스에 대한 VGA Console 접속을 지원 합니다. VGA Console 을 통해 인스턴스의 Public IP 로 접속 없이 인스턴스에 접속할 수 있습니다. 
