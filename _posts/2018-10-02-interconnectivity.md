@@ -4,7 +4,7 @@ title: "[번역] Oracle Cloud와 타 클라우드의 연결"
 date: 2018-10-02 10:00:00 +0900
 description: "Oracle Cloud와 타 클라우드(AWS,Azure 등) 간 연결" # Add post description (optional)
 img: blog_interconnectivity.png # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, interconnect, fastconnect, dedicated, megaport, network] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "interconnect", "fastconnect", "dedicated", "megaport", "network"] # add tag
 ---
 
 멀티 클라우드 아키텍처는 둘 이상의 클라우드 서비스 프로바이더를 이용 합니다. 기업은 복원력 제공, 재해 복구 계획 수립, 성능 향상, 비용 절감 등 여러 가지 이유로 클라우드 프로바이더를 둘 이상 이용 합니다. 클라우드 리소스를 한 클라우드 프로바이더에서 다른 클라우드 프로바이더로 마이그레이션하려는 경우 클라우드 간 액세스 및 네트워킹이 필요합니다.
