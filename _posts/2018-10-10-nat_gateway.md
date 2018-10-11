@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[번역] OCI NAT Gateway 소개"
+title: "OCI NAT Gateway 소개"
 date: 2018-10-10 10:00:00 +0900
 description: "Oracle Cloud Infrastructure NAT Gateway를 통해 Public Internet의 리소스에 접속할 수 있습니다." # Add post description (optional)
 img: nat_gateway.png   # Add image post (optional)
