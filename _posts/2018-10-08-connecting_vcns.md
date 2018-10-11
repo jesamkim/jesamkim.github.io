@@ -4,7 +4,7 @@ title: "[번역] Multiple VNIC로 서로 다른 VCN 연결하기: Part 1"
 date: 2018-10-08 10:00:00 +0900
 description: "여러 VNIC를 이용하여 서로 다른 VCN으로 통신하기" # Add post description (optional)
 img: connect_vcns_using_vnics.png   # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, interconnect, vcn, vnic, terraform, network] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "interconnect", "vcn", "vnic", "terraform", "bridge"] # add tag
 ---
 
 Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 연결하는데 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
