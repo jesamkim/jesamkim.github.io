@@ -4,7 +4,7 @@ title: "Migration from OCI to OCI"
 date: 2018-09-11 00:00:00 +0800
 description: "다른 Region으로 OCI Compute Instance를 Migration" # Add post description (optional)
 img: migration_from_oci_to_oci.png # Add image post (optional)
-tags: [oracle, oci, iaas, cloud, customimage, objectstorage, migration] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "customimage", "objectstorage", "migration", "마이그레이션"] # add tag
 ---
 
 OCI에서 Compute Instance의 Migration 상황을 다음의 2가지 경우라고 가정해 봅시다.
