@@ -4,7 +4,7 @@ title: "OCI-CLI 설치 (Oracle Linux 7)"
 date: 2018-09-06 00:00:00 +0800
 description: "OCI CLI를 Oracle Linux 7에 설치해 봅니다." # Add post description (optional)
 img: oci_cli.png # Add image post (optional)
-tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "cli"] # add tag
+tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "cli", "설치", "install"] # add tag
 ---
 
 ## Prerequisites
