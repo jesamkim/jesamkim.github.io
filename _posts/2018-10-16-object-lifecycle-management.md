@@ -3,12 +3,9 @@ layout: post
 title: "Object Storage Lifecycle Management 소개"
 date: 2018-10-16 14:00:00 +0900
 description: "OCI Object Storage Lifecycle Management."
-img: "lcp_create_thumbnail.jpg"
+img: "lcp_create_main.jpg"
 tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "object", "storage", "lifecycle", "management", "오브젝트", "스토리지", "라이프사이클"] # add tag
 ---
-
-![]({{site.baseurl}}/assets/img/lcp_create_main.jpg)
-
 모든 저장된 데이터가 동일한 중요도를 가지거나 미션 크리티컬한 것은 아닙니다. 이는 Oracle Cloud Infrastructure 스토리지 포트폴리오에 [Archive Storage](https://blogs.oracle.com/cloud-infrastructure/archiving-your-data-to-the-cloud-just-got-a-whole-lot-easier)를 도입했을 때의 운영상의 가정이었습니다. 아카이브 스토리지는 데이터를 Hot 또는 Cold로 분류한 다음 해당 분류를 기준으로 Standard Bucket 또는 Archive Bucket에 저장할 수 있는 유연성을 제공합니다. 이에 대한 benefit은 비용 절감일 것입니다. 아카이브 스토리지에 데이터를 저장하는 것은 standard 오브젝트 스토리지에 데이터를 저장하는 것보다 90배 더 저렴합니다.
 
 즉, 데이터가 항상 Hot 또는 Cold 범주에 딱 맞게 혹은 영구적으로 분류되는 것은 아닙니다. Lifecycle이 Hot 상태로 시작되는 데이터(자주/빠르게 액세스 해야 함)는 시간이 지남에 따라 수요가 감소할 수 있습니다. (이때는 Archive Cold 스토리지에 적합) 스토리지 비용을 줄이기 위해 데이터를 삭제해야 하는 경우도 있습니다. Lifecycle 전체에 걸쳐 적극적으로 데이터 배치를 관리하면 전체 스토리지 비용을 크게 절감할 수 있습니다. 그러나 효과적인 데이터 관리 도구가 없이 데이터 lifecycle을 관리하면 상당한 운영 오버헤드가 발생할 수 있습니다.
