@@ -7,7 +7,7 @@ img: "tracking_cost00.png"
 tags: ["oracle", "oci", "iaas", "cloud", "tagging", "cost", "tracking", "tag", "oracle cloud", "오라클 클라우드"] 
 ---
 ![]({{site.baseurl}}/assets/img/tracking_cost01.png)
-
+<br>
 Oracle Cloud Infrastructure를 사용함에 있어 부서별 혹은 Cost Center에 따른 비용 산정은 중요합니다.<br>
 Oracle Cloud Infrastructure를 사용하면 **My Services Dashboard**를 사용하여 서비스 또는 Compartment 수준에서 비용을 tracking 할 수 있지만, multiple compartment 또는 compartment를 공유하는 프로젝트의 비용 또한 tracking 할 수 있는 유연성도 필요합니다.
 
