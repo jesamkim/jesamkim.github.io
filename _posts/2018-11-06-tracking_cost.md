@@ -11,7 +11,7 @@ tags: ["oracle", "oci", "iaas", "cloud", "tagging", "cost", "tracking", "tag", "
 Oracle Cloud Infrastructure를 사용함에 있어 부서별 혹은 Cost Center에 따른 비용 산정은 중요합니다.<br>
 Oracle Cloud Infrastructure를 사용하면 **My Services Dashboard**를 사용하여 서비스 또는 Compartment 수준에서 비용을 tracking 할 수 있지만, multiple compartment 또는 compartment를 공유하는 프로젝트의 비용 또한 tracking 할 수 있는 유연성도 필요합니다.
 
-이를 고려하여 cost tracking tag를 사용하여 사용자, 프로젝트, 부서 또는 청구 목적으로 선택한 기타 메타 데이버별로 태그를 지정할 수 있습니다. **Cost Tracking Tag**는 My Services Dashboard의 온라인 보고서에 표시되는 정의된 태그의 한 유형 입니다. 이 기능은 제어가 손쉬운 스키마 기반 태그 지정 방식을 기반으로 합니다. 다른 클라우드는 자유 형식의 태그를 지원하지만 Oracle Cloud Infrastructure는 정의된(defined) 태그를 제공하여 보다 효과적으로 제어할 수 있습니다. 정의된 태그는 tagging을 제어할 수 있으며, 스팸을 방지하는데 도움이되는 스키마를 지원합니다. 
+이를 고려하여 cost tracking tag를 사용하여 사용자, 프로젝트, 부서 또는 청구 목적으로 선택한 기타 메타 데이터 별로 태그를 지정할 수 있습니다. **Cost Tracking Tag**는 My Services Dashboard의 온라인 보고서에 표시되는 정의된 태그의 한 유형 입니다. 이 기능은 제어가 손쉬운 스키마 기반 태그 지정 방식을 기반으로 합니다. 다른 클라우드는 자유 형식의 태그를 지원하지만 Oracle Cloud Infrastructure는 정의된(defined) 태그를 제공하여 보다 효과적으로 제어할 수 있습니다. 정의된 태그는 tagging을 제어할 수 있으며, 스팸을 방지하는데 도움이 되는 스키마를 지원합니다. 
 
 
 # Creating Cost Tracking Tags
