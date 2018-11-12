@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Instance Configuration 및 Instance Pool을 이용한 Compute Instance Management"
+title: "템플릿을 이용한 손쉬운 Compute Instance 관리"
 date: 2018-11-12 14:00:00 +0900
-description: "Enhanced Compute Instance Management on Oracle Cloud Infrastructure"
+description: "Instance Configuration 및 Instance Pool을 이용한 Compute Instance Management"
 img: "instance_pool1.jpg"
-tags: ["oracle", "oci", "iaas", "cloud", "instance", "pool", "management", "compute", "oracle cloud", "오라클 클라우드"] 
+tags: ["oracle", "oci", "iaas", "cloud", "instance", "pool", "management", "templete", "oracle cloud", "오라클 클라우드"] 
 ---
 
 Oracle Cloud Infrastructure는 인스턴스 구성 및 인스턴스 풀을 도입하여 컴퓨팅 인스턴스 관리를 강화하였습니다.
