@@ -25,20 +25,20 @@ Oracle Cloud Infrastructure에서는 반가상화 하드웨어 모드(Paravirtua
 
 기존 OS images 가져오기:
 
-* [NEW] Bring your own custom image to Oracle Cloud Infrastructure using paravirtualized mode: VMDK 또는 QCOW2 형식을 사용하여 기존 Linux OS 이미지를 가져온 후 반가상화 모드 VM에서 실행하여 성능 향상. 자세한 내용은 [Bring Your Own Custom Image for Paravirtualized Mode Virtual Machines](https://docs.cloud.oracle.com/iaas/Content/Compute/References/customimagesparavirtualizedmode.htm)를 참조하세요.
+* **[NEW] Bring your own custom image to Oracle Cloud Infrastructure using paravirtualized mode:** VMDK 또는 QCOW2 형식을 사용하여 기존 Linux OS 이미지를 가져온 후 반가상화 모드 VM에서 실행하여 성능 향상. 자세한 내용은 [Bring Your Own Custom Image for Paravirtualized Mode Virtual Machines](https://docs.cloud.oracle.com/iaas/Content/Compute/References/customimagesparavirtualizedmode.htm)를 참조하세요.
 
-* Bring your own custom image to Oracle Cloud Infrastructure VMs using emulation mode: VMDK 또는 QCOW2 형식을 사용하여 기존 Linux OS 이미지를 가져오고 에뮬레이션 모드 VM에서 실행합니다. 자세한 내용은 [Bring Your Own Custom Image for Emulation Mode Virtual Machines](https://docs.cloud.oracle.com/iaas/Content/Compute/References/customimagesemulationmode.htm)를 참조하세요.
+* **Bring your own custom image to Oracle Cloud Infrastructure VMs using emulation mode:** VMDK 또는 QCOW2 형식을 사용하여 기존 Linux OS 이미지를 가져오고 에뮬레이션 모드 VM에서 실행합니다. 자세한 내용은 [Bring Your Own Custom Image for Emulation Mode Virtual Machines](https://docs.cloud.oracle.com/iaas/Content/Compute/References/customimagesemulationmode.htm)를 참조하세요.
 
 * 기존 하이퍼바이저, 관리 툴 및 프로세스를 사용하여 전체 가상화된 워크로드를 Oracle Cloud Infrastructure로 이동합니다. OS 이미지 또는 Ubuntu 6.x, Redhat Enterprise Linux 3.x 또는 CentOS 5.4와 같은 레거시 OS에서는 Oracle Cloud Infrastructure 베어메탈 인스턴스에서 KVM을 사용할 수 있습니다. 자세한 내용은 [Bring Your Own KVM](https://cloud.oracle.com/iaas/whitepapers/installing_kvm_multi_vnics.pdf)와 [Bring Your Own Nested KVM on VM Shapes](https://blogs.oracle.com/cloud-infrastructure/nested-kvm-virtualization-on-oracle-iaas)를 참조하세요.
 
-* Bring Your Own Oracle VM: 자세한 내용은 [Oracle VM on Oracle Cloud Infrastructure](https://cloud.oracle.com/iaas/whitepapers/ovm-on-oci.pdf)를 참조하세요.
+* **Bring Your Own Oracle VM:** 자세한 내용은 [Oracle VM on Oracle Cloud Infrastructure](https://cloud.oracle.com/iaas/whitepapers/ovm-on-oci.pdf)를 참조하세요.
 
 
 혹은 새로운 OS images 만들기 :
 
-* Oracle Cloud Infrastructure Published OS images: 오라클은 Oracle Linux, Microsoft Windows, Ubuntu 및 CentOS에 대해 미리 작성된 이미지를 제공합니다. 자세한 내용은 [Oracle-provided images](https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/References/images.htm)의 complete list를 참조하세요.
+* **Oracle Cloud Infrastructure Published OS images:** 오라클은 Oracle Linux, Microsoft Windows, Ubuntu 및 CentOS에 대해 미리 작성된 이미지를 제공합니다. 자세한 내용은 [Oracle-provided images](https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/References/images.htm)의 complete list를 참조하세요.
 
-* Red Hat Enterprise Linux 7.4 to Oracle Cloud Infrastructure bare metal and VM instances: [Terraform provider](https://github.com/nelsonse/terraform-provider-oci/tree/master/docs/solutions/rhel74_image)에서 사용할 수 있는 Terraform templete을 사용하여 베어 메탈 및 VM 인스턴스에 대한 Red Hat Enterprise Linux 7.4 이미지를 생성할 수도 있습니다.
+* **Red Hat Enterprise Linux 7.4 to Oracle Cloud Infrastructure bare metal and VM instances:** [Terraform provider](https://github.com/nelsonse/terraform-provider-oci/tree/master/docs/solutions/rhel74_image)에서 사용할 수 있는 Terraform templete을 사용하여 베어 메탈 및 VM 인스턴스에 대한 Red Hat Enterprise Linux 7.4 이미지를 생성할 수도 있습니다.
 
 
 Custom images를 포함한 운영중인 워크로드를 Oracle Cloud Infrastructure로 가져오는 방법에 대한 자세한 내용은 [Bring Your Own Image](https://docs.cloud.oracle.com/iaas/Content/Compute/References/bringyourownimage.htm)를 참조하세요.
