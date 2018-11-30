@@ -22,26 +22,26 @@ Oracle Cloud Infrastructure 에서 OCI Region 간 볼륨 백업을 할 수 있�
 
 1. 콘솔의 Block Storage 섹션에서 컴파트먼트를 선택하고 block volume backups로 들어가세요.
 
-2. 다른 region에 복사할 백업에 대한 작업 메뉴(...)에서 **Copy to Another Region**을 선택하세요.
+2. 다른 region에 복사할 백업에 대한 작업 메뉴(...)에서 **Copy to Another Region**을 선택하세요.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup02.png)
 
-3. 백업 및 대상 region에서 이름을 지정하고, **Copy Block Volume Backup**을 누르세요.
+3. 백업 및 대상 region에서 이름을 지정하고, **Copy Block Volume Backup**을 누르세요.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup03.png)
 
-4. 백업 복사 설정을 확인하세요.
+4. 백업 복사 설정을 확인하세요.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup04.png)
 
-5. 콘솔에서 대상 region으로 이동하고 해당 region에서 백업을 사용할 수 있는지 확인 합니다.
+5. 콘솔에서 대상 region으로 이동하고 해당 region에서 백업을 사용할 수 있는지 확인 합니다.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup05.png)
 이제 백업에서 새 볼륨을 생성하여 대상 region의 백업에서 복원할 수 있습니다.
 
-6. 대상 region의 백업에 대한 작업 메뉴(...)에서 **Create Block Volume**을 선택합니다.
+6. 대상 region의 백업에 대한 작업 메뉴(...)에서 **Create Block Volume**을 선택합니다.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup06.png)
 
-7. 복원된 볼륨의 이름을 입력하고 필요한 파라미터를 넣은 다음, **Create Block Volume**을 클릭합니다.
+7. 복원된 볼륨의 이름을 입력하고 필요한 파라미터를 넣은 다음, **Create Block Volume**을 클릭합니다.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup07.png)
 
-8. 대상 region의 블록 볼륨 섹션에서 복원된 볼륨을 사용할 수 있는지 확인합니다.
+8. 대상 region의 블록 볼륨 섹션에서 복원된 볼륨을 사용할 수 있는지 확인합니다.<br>
 ![]({{site.baseurl}}/assets/img/cross-region-bv-backup08.png)
 
 
