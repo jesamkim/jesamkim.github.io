@@ -80,7 +80,7 @@ Amazon S3 Compatibility API Keys 화면에서 “Generate Secret Key” 버튼�
 
 
 위와 같이 생성된 Secret Key를 메모장에 Copy & Paste 합니다.
-그리고 Access Key에 대한 OCID도 메모장에 Copy & Paste 합니다.
+그리고 Access Key도 메모장에 Copy & Paste 합니다.
 
 ![]({{site.baseurl}}/assets/img/cloudberry_s3api10.png)
 
@@ -108,7 +108,7 @@ Select Cloud Storage 창에서 **S3 Compatible** 를 더블클릭 합니다.
 	- Display name : 원하는 이름을 입력합니다.
 	- Service point : 테넌트이름.compat.objectstorage.리전이름.oraclecloud.com 형식으로 입력합니다.
 			  ex) jaykim000.compat.objectstorage.us-ashburn-1.oraclecloud.com
-	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키의 OCID (앞에서 메모장에 복사하였음)
+	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키 (앞에서 메모장에 복사하였음)
 	- Secret Key : 키 생성 단계에서 Generate Key 한 값을 지정 (앞에서 메모장에 복사하였음)
 	- Signature version : 여기서 “4”로 지정
 	
