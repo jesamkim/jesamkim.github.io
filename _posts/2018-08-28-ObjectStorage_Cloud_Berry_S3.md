@@ -64,12 +64,13 @@ AWS S3 호환 API를 사용하기 위해 사용자의 액세스 키와 비밀 �
 
 
 왼쪽 Resources 에서 Amazon S3 Compatibility API Keys 를 선택합니다.
+<br>(Amazon S3 Compatibility API Keys는 Customer Secret Keys로 이름이 변경되었습니다.)
 
 ![]({{site.baseurl}}/assets/img/cloudberry_s3api07.png)
 
 
 Amazon S3 Compatibility API Keys 화면에서 “Generate Secret Key” 버튼을 클릭합니다.
-(Amazon S3 Compatibility API Keys는 Customer Secret Keys로 이름이 변경되었습니다.)
+<br>(Amazon S3 Compatibility API Keys는 Customer Secret Keys로 이름이 변경되었습니다.)
 
 ![]({{site.baseurl}}/assets/img/cloudberry_s3api08.png)
 
