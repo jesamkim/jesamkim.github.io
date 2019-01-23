@@ -9,7 +9,7 @@ tags: ["oracle", "oci", "iaas", "cloud", "windows", "ad", "active", "directory",
 
 새로운 Windows AD(Active Directory) 환경을 생성할 수 있는 몇 가지 상황이 있으며, 이 포스트에서는 Oracle Cloud Infrastructure를 사용하여 새로운 AD 도메인 컨트롤러를 구축하는 방법에 대해 설명하며, Microsoft PowerShell과 Oracle Cloudbase-init 스크립트를 사용하면 프로세스를 자동화하고 Windows AD를 구축하는데 따라는 어려움을 줄일 수 있습니다.
 Oracle Cloud Infrastructure Console에서 호스트를 생성할 때 스크립트를 **Advanced** option의 **User data** 색션에 배치할 수 있습니다.
-<br>
+<br><br>
 이 포스트에서는 AD 도메인 컨트롤러의 자동화에 대해서만 다루며 VCN(Virtual Cloud Network) 및 네트워크 환경에 대해서는 설명하지 않습니다. Creating Windows Adtive Directory Domain Servers in  Oracle Cloud Infrastructure white paper에서 더 많은 것을 배울 수 있습니다.
 다음 다이어그램은 VCN 및 서브넷을 구축하는 방법에 대한 아키텍처를 보여줍니다.
 
@@ -197,7 +197,7 @@ Forest를 점검하여 모든 것이 올바른지 확인하세요. 도메인이 
 이 내용은 첫 번째 AD 도메인 컨트롤러를 설치하기 위한 간단한 스크립트 입니다. 프로세스를 완료하기 위해 두 번 재부팅해야하며 모든 Windows features를 설치하는데 약 20-25분이 소요됩니다. **["Creating Your Windows Active Directory Domain Servers in Oracle Cloud Infrastructure"](https://cloud.oracle.com/iaas/whitepapers/creating_active_directory_domain_services_in_oci.pdf)** 백서에서 Oracle Cloud Infrastructure에서 탄력있는 AD 환경을 구축하기 위한 추가 단계를 확인할 수 있습니다.
 
 
-
+<br>
 ## 참고
 
 이 포스트의 원문은 [Creating a Windows Active Directory Domain Controller in Oracle Cloud Infrastructure](https://blogs.oracle.com/cloud-infrastructure/creating-a-windows-active-directory-domain-controller-in-oracle-cloud-infrastructure) 입니다.
