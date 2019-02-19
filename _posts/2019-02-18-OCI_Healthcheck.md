@@ -16,7 +16,7 @@ OCI는 Oracle Cloud 또는 Hybrid 인프라에서 호스팅되는 public-facing 
 
 External health checks를 통해 전 세계의 Oracle managed vantage points에서 사용자가 지정한 FQDN(fully qualified domain name) 또는 IP 주소에 이르기까지 다양한 프로토콜을 사용하여 scheduled testing을 수행할 수 있습니다. Health checks는 IP 주소 모니터링을 위해 HTTP 및 HTTPS 웹 어플리케이션 검사 및 TCP 및 ICMP 핑을 지원합니다. 또한 각 vantage point에서 10초마다 한 번씩 test를 실행하는 High-Availability 테스트를 선택할 수 있습니다. 일회성 유효성 검사 또는 트러블슈팅 테스트도 REST API를 통해 사용할 수 있습니다.
 
-또한, Health Check 서비스는 [DNS Traffic Management](https://docs.cloud.oracle.com/iaas/Content/DNS/Concepts/dnszonemanagement.htm) 서비스와 완벽하게 통합되어 서비스 장애의 자동 탐지를 가능하게 하고, DNS 장애 이전을 트리거하여 서비스의 연속성을 보장합니다.
+또한, Health Check 서비스는 [DNS Traffic Management](https://jesamkim.github.io/OCI_Traffic_Management/) 서비스와 완벽하게 통합되어 서비스 장애의 자동 탐지를 가능하게 하고, DNS 장애 이전을 트리거하여 서비스의 연속성을 보장합니다.
 
 
 # Health Check 생성하기
