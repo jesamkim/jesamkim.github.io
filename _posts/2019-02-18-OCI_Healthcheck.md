@@ -22,7 +22,6 @@ External health checks를 통해 전 세계의 Oracle managed vantage points에�
 # Health Check 생성하기
 
 1. **Edge Services** 메뉴에서, **Health Checks**로 이동하세요. Health Checks 영역에서 **Create Health Check**를 클릭하고 dialog box에 자세한 내용을 입력합니다.
-
 ![]({{site.baseurl}}/assets/img/healthcheck2.png)
 
 2. 이 페이지로 돌아갈 때, 이 check의 목적을 기억할 수 있도록 name을 입력합니다.
