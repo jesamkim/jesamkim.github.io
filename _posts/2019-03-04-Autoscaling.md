@@ -22,16 +22,16 @@ Metric based Monitoring, Instance Configurations, Instance Pools와 연동하여
 ![]({{site.baseurl}}/assets/img/autoscaling01.png)
 
 이 인스턴스의 구성으로 Instance Configuration을 생성하겠습니다.
-위와 같이 Instance Details 화면의 우측 상단에 있는 "Create Instance Configuration" 버튼을 클릭합니다.
+위와 같이 Instance Details 화면의 우측 상단에 있는 **Create Instance Configuration** 버튼을 클릭합니다.
 
 ![]({{site.baseurl}}/assets/img/autoscaling02.png)
 
-원하는 Instance Configuration Name을 지정한 후 "Create Instance Configuration" 버튼을 눌러서 완료 합니다.
+원하는 Instance Configuration Name을 지정한 후 **Create Instance Configuration** 버튼을 눌러서 완료 합니다.
 
 ![]({{site.baseurl}}/assets/img/autoscaling03.png)
 
 위와 같이 Instance Configuration이 잘 생성되었습니다. 이제는 이것으로 Instance Pools를 만들어보겠습니다.
-"Create Instance Pool" 버튼을 클릭합니다. Instance Pool의 이름을 지정하고, 최초 프로비저닝 할 Instance 수를 입력합니다. 여기서는 기본으로 1개의 Instance만 프로비저닝 하겠습니다.
+**Create Instance Pool** 버튼을 클릭합니다. Instance Pool의 이름을 지정하고, 최초 프로비저닝 할 Instance 수를 입력합니다. 여기서는 기본으로 1개의 Instance만 프로비저닝 하겠습니다.
 
 ![]({{site.baseurl}}/assets/img/autoscaling04.png)
 
@@ -40,7 +40,7 @@ Metric based Monitoring, Instance Configurations, Instance Pools와 연동하여
 위와 같이 Instance Pool이 생성되었으며 지정한만큼의 Instance가 생성되었습니다. (1개)
 
 이제는 이 Instance Pool을 기반으로 Autoscaling 설정을 하겠습니다.
-Instance Pool Details 화면 우측 상단의 Action > Create Autoscaling Confguration을 클릭합니다.
+Instance Pool Details 화면 우측 상단의 **Action > Create Autoscaling Confguration**을 클릭합니다.
 
 ![]({{site.baseurl}}/assets/img/autoscaling06.png)
 
