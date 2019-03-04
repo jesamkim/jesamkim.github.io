@@ -7,17 +7,17 @@ img: "resourcemanager01.jpg"
 tags: ["oracle", "oci", "iaas", "cloud", "autoscaling", "scaleout", "오토스케일", "오토스케일링", "metric", "demo","oracle cloud", "오라클 클라우드"] 
 ---
 
-2019년 3월 Oracle Cloud Infrastructure에 공식적으로 Autoscaling 기능이 GA 되었습니다.
+2019년 3월 Oracle Cloud Infrastructure에도 공식적으로 Autoscaling 기능이 GA 되었습니다.
 Metric based Monitoring, Instance Configurations, Instance Pools와 연동하여 Instance를 Scale Out 할 수 있습니다.
 
 본 포스트는 OCI의 Autoscaling이 동작하는 것을 보기 위한 간단한 DEMO를 보여줍니다.
-먼저 기본적인 VCN(Virtual Cloud Network) 및 Instance를 만드는 방법은 TheKoguryo's 기술블로그의 포스트를 참조하시기 바랍니다.
+먼저 기본적인 VCN(Virtual Cloud Network) 및 Instance를 만드는 방법은 TheKoguryo's 기술블로그 내용을 참조하시기 바랍니다.
 
 - [OCI Compute VM 사용하기](https://thekoguryo.github.io/oci/chapter03/)
 
 
 여기서는 jaykim-base-instance라는 이름의 VM.Standard2.1 shape의 Ubuntu 서버를 하나 만들었고 이것으로 Instance Config를 만들어 보겠습니다.
-(Instance Configuration 및 Instance Pool에 대해서는 이전 저의 포스트 [템플릿을 이용한 손쉬운 Compute Instance 관리](https://docs.cloud.oracle.com/iaas/Content/Compute/Tasks/autoscalinginstancepools.htm)를 참조하시기 바랍니다.)
+(Instance Configuration 및 Instance Pool에 대해서는 이전 저의 포스트 [템플릿을 이용한 손쉬운 Compute Instance 관리](https://jesamkim.github.io/instance_pool/)를 참조하시기 바랍니다.)
 
 ![]({{site.baseurl}}/assets/img/autoscaling01.png)
 
