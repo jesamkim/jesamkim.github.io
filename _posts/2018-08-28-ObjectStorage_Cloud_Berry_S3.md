@@ -143,3 +143,6 @@ OCI Object Storage 의 CloudBerry 버킷에 파일 업로드 테스트도 정상
 
 ### 참조자료
 [Oracle Public Document - S3 Compatible API](https://docs.cloud.oracle.com/iaas/Content/Object/Tasks/s3compatibleapi.htm?tocpath=Services%7CObject%20Storage%7C_____8)
+
+
+** 해당 포스트는 개인적으로 시간을 할애하여 작성하였습니다. 내용에 오류가 있을 수 있으며, 글의 내용은 개인적인 의견 입니다.
