@@ -7,7 +7,7 @@ img: "resourcemanager01.jpg"
 tags: ["oracle", "oci", "iaas", "cloud", "autoscaling", "scaleout", "오토스케일", "오토스케일링", "metric", "demo","oracle cloud", "오라클 클라우드"] 
 ---
 
-2019년 3월 Oracle Cloud Infrastructure에도 공식적으로 Autoscaling 기능이 GA 되었습니다.
+2019년 3월 Oracle Cloud Infrastructure에도 Autoscaling 기능이 GA 되었습니다.
 Metric based Monitoring, Instance Configurations, Instance Pools와 연동하여 Instance를 Scale Out 할 수 있습니다.
 
 본 포스트는 OCI의 Autoscaling이 동작하는 것을 보기 위한 간단한 DEMO를 보여줍니다.
