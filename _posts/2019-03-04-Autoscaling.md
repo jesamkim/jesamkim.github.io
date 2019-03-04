@@ -76,9 +76,11 @@ Compute > Instance 메뉴로 이동합니다.
 이제 ssh 접속 창을 2개 띄웁니다. 
 
 창 1: Stress tool로 2-core 사용률 100% 부하 시작
+
     $ stress -c 2
 
 창 2: top 실행
+
     $ top
 
 ![]({{site.baseurl}}/assets/img/autoscaling11.png)
