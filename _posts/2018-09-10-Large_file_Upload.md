@@ -48,3 +48,7 @@ OCI Object Storage는 web이나 cloudberry 등에서 upload 시 single file size
 웹에서도 정상적으로 파일이 업로드 되었음이 확인되었습니다.
 
 ![]({{site.baseurl}}/assets/img/largefile_upload.png)
+
+
+
+** 해당 포스트는 개인적으로 시간을 할애하여 작성하였습니다. 내용에 오류가 있을 수 있으며, 글의 내용은 개인적인 의견 입니다.
