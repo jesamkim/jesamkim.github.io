@@ -76,3 +76,6 @@ Object Storage에서 이미 생성된 Bucket의 정보를 가져오는 경우에
 정상적으롤 STD_BK 버킷의 정보를 읽어오는 것을 확인하실 수 있습니다.
 
 OCI CLI에 대한 다양한 명령어는 [Oracle Cloud Infrastructure CLI Command Reference](https://docs.cloud.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/index.html) 에서 확인하실 수 있습니다.
+
+
+** 해당 포스트는 개인적으로 시간을 할애하여 작성하였습니다. 내용에 오류가 있을 수 있으며, 글의 내용은 개인적인 의견 입니다.
