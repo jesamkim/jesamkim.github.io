@@ -21,7 +21,7 @@ tags: ["oracle", "oci", "windows", "instance", "vm", "password", "reset", "2012"
 <br>
 <br>
 <br>
-## 1단계 : 부팅 볼륨을 유지하면서(삭제하지 않고), Windows 인스턴스 Terminate
+## (1/9) : 부팅 볼륨을 유지하면서(삭제하지 않고), Windows 인스턴스 Terminate
 
 OCI Console 에서 Windows 인스턴스를 Terminate 하는데, 아래와 같이 Permanently delete the attached Boot Volume 에 체크 해제하고 Terminate Instance 버튼을 클릭합니다.
 
@@ -32,7 +32,7 @@ OCI Console 에서 Windows 인스턴스를 Terminate 하는데, 아래와 같이
 <br>
 <br>
 <br>
-## 2단계 : Ubuntu 인스턴스 생성 후, Windows 인스턴스의 boot volume 연결 
+## (2/9) : Ubuntu 인스턴스 생성 후, Windows 인스턴스의 boot volume 연결 
 
 Windows 인스턴스가 있던 subnet에서 Ubuntu 인스턴스를 하나 생성 합니다.<br>
 (Image는 Canonical Ubuntu 16.04 선택)<br>
@@ -46,7 +46,7 @@ Ubuntu 인스턴스가 RUNNING 상태가 되면, OCI Console 에서 Windows 인�
 <br>
 <br>
 <br>
-## 3단계 : Ubuntu 인스턴스에서 ISCSI 로그인 명령 실행
+## (3/9) : Ubuntu 인스턴스에서 ISCSI 로그인 명령 실행
 
 Ubuntu 인스턴스에 ssh 접속한 뒤 iSCSI 접속 명령을 입력할 겁니다.<br>
 OCI Console에서 볼륨에 연결된 인스턴스의 세부 정보 페이지에서 ISCSI 명령을 확인할 수 있습니다.<br>
@@ -64,7 +64,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 4단계 : 파티션 레이아웃 확인
+## (4/9) : 파티션 레이아웃 확인
 
 다음 명령을 실행하면 예제와 비슷한 결과를 볼 수 있습니다.
 
@@ -88,7 +88,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 5단계 : NTFS 볼륨 확인
+## (5/9) : NTFS 볼륨 확인
 
 **$ sudo ntfsfix /dev/sdb4**
 
@@ -107,7 +107,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 6단계 : chntpw 설치
+## (6/9) : chntpw 설치
 
 **$ sudo apt-get update**
 
@@ -116,7 +116,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 7단계 : chntpw로 Windows Administrator 패스워드 리셋
+## (7/9) : chntpw로 Windows Administrator 패스워드 리셋
 
 **$ chntpw /media/windows/Windows/System32/config/SAM -u opc**
 
@@ -223,7 +223,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 8단계 : 빈 암호 로그인이 허용되도록 레지스트리 설정 편집
+## (8/9) : 빈 암호 로그인이 허용되도록 레지스트리 설정 편집
 
 **$ chntpw -e /media/windows/Windows/System32/config/SYSTEM**
 
@@ -276,10 +276,10 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
 <br>
 <br>
 <br>
-## 9단계 : Windows 인스턴스 새로 생성
+## (9/9) : Windows 인스턴스 새로 생성
 
 Create Instance 메뉴를 통해 Windows 인스턴스를 다시 만드세요. 이때, Image는 기존의 boot volume을 선택해야 합니다.<br>
-(그외 기타 파라미터가 있다면 1단계에서 기록한 내용으로 함께 설정하세요.)
+(그외 기타 파라미터가 있다면 (1/9)단계에서 기록한 내용으로 함께 설정하세요.)
 
 ![]({{site.baseurl}}/assets/img/win2k_vm_pw_reset_03.jpg)
 
