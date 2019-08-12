@@ -205,7 +205,7 @@ iSCSI로 Windows 인스턴스 볼륨이 정상적으로 붙었으면 lsblk 명�
     Select: [q] >
 ~~~
 
-** q**
+**> q**
 
 ~~~
     Hives that have changed:
