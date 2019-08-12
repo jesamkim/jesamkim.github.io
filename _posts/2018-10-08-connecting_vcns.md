@@ -163,9 +163,6 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
 이제 최대 52개의 VCN을 서로 연결하여 허브 및 스포크 모델을 가지는 솔루션을 확장할 수 있습니다. 브릿지 인스턴스는 [최대 52개의 VNIC](https://docs.cloud.oracle.com/iaas/Content/Compute/References/computeshapes.htm)를 가질 수 있으므로 브릿지 인스턴스를 사용하여 최대 52개의 VCN을 연결할 수 있습니다.
 
 
-# Next
-
-이 시리즈의 Part2 에서는 브릿지 인스턴스에 HA (High Availability)를 제공하는 방법을 살펴볼 것입니다. 브릿지 인스턴스가 down 되면 백업 브릿지 인스턴스로 take over 됩니다.
 
 
 ## 참고
