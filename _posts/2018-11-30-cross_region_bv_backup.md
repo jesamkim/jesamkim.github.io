@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cross-Region Block Volume Backup 기능 소개"
+title: "Cross-Region Block Volume Backup"
 date: 2018-11-30 14:00:00 +0900
 description: "Cross-Region Block Volume Backups for Business Continuity, Migration, and Expansion"
 img: "cross-region-bv-backup01.jpeg"
