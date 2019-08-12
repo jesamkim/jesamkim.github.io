@@ -14,11 +14,11 @@ tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "cli", "�
 
 ## To Installation the CLI
 
-OCI CLI는 간단하게 자동 설치할 수 있습니다.
+OCI CLI는 간단하게 자동 설치할 수 있습니다. (가장 최신 버전의 OCI CLI가 설치 됩니다)
 
 	$ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 	
-만약 manually 설치를 진행하는 경우는 아래와 같이 합니다.
+만약 manually 설치를 진행하는 경우는 아래와 같이 합니다. (여기서는 OCI v2.4.18)
 
 	$ sudo yum -y install gcc libffi-devel python-devel openssl-devel
 	$ sudo easy_install pip
