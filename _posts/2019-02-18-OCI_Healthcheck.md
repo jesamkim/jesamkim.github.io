@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OCI Health Checks 소개"
+title: "OCI - Health Checks"
 date: 2019-02-18 12:00:00 +0900
 description: "External Health Checks on Oracle Cloud Infrastructure"
 img: "healthcheck1.png"
