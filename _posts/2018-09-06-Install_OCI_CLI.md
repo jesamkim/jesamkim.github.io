@@ -16,7 +16,7 @@ tags: ["오라클", "클라우드", "oracle", "oci", "iaas", "cloud", "cli", "�
 
 OCI CLI는 간단하게 자동 설치할 수 있습니다.
 
-	$ bash -c “$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)”
+	$ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 	
 만약 manually 설치를 진행하는 경우는 아래와 같이 합니다.
 
@@ -54,7 +54,7 @@ OCI CLI는 간단하게 자동 설치할 수 있습니다.
 	
 Object Storage에서 이미 생성된 Bucket의 정보를 가져오는 경우에 대한 CLI 입니다.
 
-	$ oci os bucket get -ns gse00014941 –bucket-name STD_BK
+	$ oci os bucket get  --bucket-name STD_BK
 	
 	{
 	“data”: {
