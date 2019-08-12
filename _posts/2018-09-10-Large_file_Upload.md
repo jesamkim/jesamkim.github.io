@@ -27,8 +27,8 @@ OCI Object Storage는 web이나 cloudberry 등에서 upload 시 single file size
 
 그리고 oci-cli 명령어를 사용해 Win2012R2.tar.gz 파일이 있는 폴더 통째로 업로드 합니다.
 
-	[opc@cli-test ~]$ oci os object bulk-upload -ns gse00014941 -bn CloudBerry --src-dir /home/opc/src
-	Uploaded Win2012R2-LGIT.tar.gz  [####################################]  100%
+	[opc@cli-test ~]$ oci os object bulk-upload --bucket-name CloudBerry --src-dir /home/opc/src
+	Uploaded Win2012R2.tar.gz  [####################################]  100%
 	{
 		"skipped-objects": [],
 		"upload-failures": {},
