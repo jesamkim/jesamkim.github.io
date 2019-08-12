@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OCI Traffic Management 소개"
+title: "OCI - Traffic Management"
 date: 2019-02-19 09:00:00 +0900
 description: "Announcing the Launch of Traffic Management"
 img: "trafficmanagement1.png"
