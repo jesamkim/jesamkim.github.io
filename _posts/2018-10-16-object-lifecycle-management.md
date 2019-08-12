@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Object Storage Lifecycle Management 소개"
+title: "Object Storage Lifecycle Management"
 date: 2018-10-16 14:00:00 +0900
 description: "OCI Object Storage Lifecycle Management."
 img: "lcp_create_main.jpg"
