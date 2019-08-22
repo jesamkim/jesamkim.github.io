@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OCI Autoscaling DEMO"
+title: "OCI - Autoscaling 테스트"
 date: 2019-03-04 12:00:00 +0900
 description: "OCI의 Autoscaling 기능을 실제로 테스트 해봅시다."
 img: "resourcemanager01.jpg"
