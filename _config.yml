@@ -1,7 +1,6 @@
-title: JAY PLUS (Oracle Cloud를 다루는 블로그)
+title: JAY PLUS
 description: > # this means to ignore newlines until "baseurl:"
-  This blog is to share technical tips of Oracle Cloud.
-  I'm Jesam Kim a Senior Solution Engineer at Oracle Korea.
+  This blog is to share technical tips.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jesamkim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -10,7 +9,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Jesam Kim # add your name
 author-img: jesamkim.jpg # add your photo
-about-author: a senior solution engineer focusing on Cloud & Big Data at Oracle. # add description
+about-author: senior solution engineer # add description
 social-twitter: jesamkim # add your Twitter handle
 social-facebook: jesamkim # add your Facebook handle
 social-github: jesamkim # add your Github handle
