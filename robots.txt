@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /ai-tech-blog/
-Disallow: /
+Allow: /
 
 Sitemap: https://jesamkim.github.io/ai-tech-blog/sitemap.xml
