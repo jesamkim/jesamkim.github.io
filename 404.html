@@ -2,10 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta http-equiv="refresh" content="3; url=/ai-tech-blog/">
+  <title>Redirecting...</title>
+  <script>
+    // Map old root paths to /ai-tech-blog/ paths
+    var path = window.location.pathname;
+    var mapped = "/ai-tech-blog" + path;
+    // Known prefixes that should redirect
+    var prefixes = ["/posts/", "/tags/", "/categories/", "/archives/", "/search/", "/about/"];
+    var shouldRedirect = prefixes.some(function(p) { return path.startsWith(p); });
+    if (shouldRedirect) {
+      window.location.replace(mapped);
+    } else {
+      window.location.replace("/ai-tech-blog/");
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/ai-tech-blog/">
+  </noscript>
 </head>
 <body>
-  <p>This page no longer exists. Redirecting to <a href="/ai-tech-blog/">AI Tech Blog</a>...</p>
+  <p>Redirecting to <a href="/ai-tech-blog/">AI Tech Blog</a>...</p>
 </body>
 </html>
